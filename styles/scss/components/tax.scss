@@ -1,0 +1,116 @@
+
+.tax-content {
+	padding-bottom: 150px;
+	&--border-bottom {
+		border-bottom: 2px solid $primary;
+	}
+	&__description {
+		header {
+			margin-bottom: 30px;
+			h2 {
+				font-family: $poppins;
+				font-weight: 700;
+				color: $primary;
+				font-size: 38px;
+			}
+		}
+		.description {
+			h1, h2, h3, h4, h5, h6 {
+				font-family: $poppins;
+				font-weight: 700;
+				color: $primary;
+			}
+			font-family: $nunito;
+			font-weight: 400;
+			font-size: 20px;
+			p {
+				line-height: 30px;
+				margin-bottom: 40px;
+			}
+			a {
+				color: $primary;
+			}
+			strong {
+				font-weight: bold;
+			}
+		}
+	}
+	&__sidebar {
+		text-align: center;
+		.box {
+			&--border-bottom {
+				border-bottom: 2px solid $primary;
+				padding-bottom: 40px;
+			}
+		}
+	}
+
+	&__member-box {
+		position: relative;
+		// background: rgba(243,144,34, 0.8);
+		&:before {
+			content: "";
+			background: rgb(255,255,255);
+			background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.91) 100%);
+			background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.91) 100%);
+			background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.91) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+			position: absolute;
+			top: -200px;
+			right: 0;
+			left: 0;
+			height: 200px;
+			z-index: 0;
+		}
+	}
+}
+
+.member-box {
+	position: relative;
+	z-index: 1001;
+	overflow: hidden;
+	border-radius: 15px;
+	background-position: center;
+	&:after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: rgba($primary, 0.90);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 101;
+		border-radius: 15px;
+	}	
+	
+	&__content {		
+		position: relative;
+		z-index: 201;
+		padding: 50px;
+		text-align: center;
+		color: #fff;
+		h2 {
+			font-family: $poppins;
+			font-weight: 700;
+			font-size: 38px;
+			margin-bottom: 40px;
+
+		}
+		p {
+			font-family: $nunito;
+			font-weight: 800;
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+	&__login {
+		font-family: $nunito;
+		font-weight: 400;
+		font-size: 20px;
+		margin-top: 35px;
+		a {
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+
+.popular-links {
+	
+}
+
+.popular-links {
+	padding: 65px 0;
+	background-image: url('assets/images/popular-links-background.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	header {
+		h2 {
+			font-family: $poppins;
+			font-size: 23px;
+			color: #fff;
+		}
+	}
+	h2 {
+		text-align: center;
+		font-family: $poppins;
+		font-size: 23px;
+		font-weight: 700;
+		margin-bottom: 50px;
+
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		.item {
+			width: 31%;
+
+			> a {
+				background-color: #fff;
+				padding: 30px 27px;
+				display: block;
+				transition: all 0.3s ease;
+			}
+			h3 {
+				font-family: $poppins;
+				font-size: 25px;
+				font-weight: 700;
+				min-height: 60px;
+				margin-bottom: 20px;
+				color: $secondary;
+				transition: all 0.3s ease;
+				img {
+					display: inline-block;
+					margin-left: 10px;
+				}
+			}
+			figure {
+				text-align: center;
+			}
+			&:hover {
+
+				> a {
+					background-color: $secondary;
+				}
+				
+				h3 {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

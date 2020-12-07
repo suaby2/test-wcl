@@ -6,3 +6,26 @@ ul {
 a {
 	text-decoration: none;
 }
+
+
+
+.btn {
+	&__join-now {
+		border-radius: 30px;
+		width: 285px;
+		height: 59px;
+		background-color: #fff;
+		line-height: 45px;
+		font-family: $poppins;
+		font-size: 25px;
+		font-weight: 700;
+		color: $primary;
+		margin-top: 50px;
+		border: 2px solid #fff;
+		transition: all 0.3s ease;
+		&:hover {
+			background: transparent;
+			color: $secondary;
+		}
+	}
+}

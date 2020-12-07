@@ -1,0 +1,11 @@
+.search-box {
+  display: inline-block;
+  padding-left: 50px;
+}
+.search-box__input {
+  border-bottom: 1px solid #333;
+}
+.search-box__input input {
+  border: 0;
+  display: inline-block;
+}

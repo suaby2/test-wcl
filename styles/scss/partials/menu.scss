@@ -1,0 +1,55 @@
+
+.main-navigation {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	&__wrap {
+		display: flex;
+	}
+
+	@media screen and (max-width: 992px) {
+		background-color: $primary;
+		.menu {
+			display: none;
+		}
+	}
+
+	&.toggled {
+		.menu {
+			display: block;
+		}
+	}
+}
+.menu {
+	margin: 0;
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	li {
+		a {
+			color: $secondary;
+			font-size: 14px;
+			font-family: $poppins;
+			font-weight: 700;
+			transition:  all 0.3s ease;
+			&:hover {
+				color: $primary;
+			}
+			
+		}
+	}
+	@media screen and (max-width: 992px) {
+		li {
+			text-align: center;
+			padding: 10px 0;			
+			a { 
+				color: #fff;
+				font-size: 18px;				
+			}
+		}		
+	}
+}
